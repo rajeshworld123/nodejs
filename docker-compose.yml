@@ -3,7 +3,8 @@ services:
   redis-server:
     image: 'redis'
   node-app:
-  io.rancher.scheduler.affinity:host_label: newhost=newhost
+    labels:
+      io.rancher.scheduler.affinity:host_label: newhost=newhost
     build: .
     ports:
       - "4081:8081"
