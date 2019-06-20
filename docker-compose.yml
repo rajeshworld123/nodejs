@@ -1,7 +1,4 @@
 version: '2'
-services:
-  redis-server:
-    image: 'redis'
   node-app:
     labels:
       io.rancher.scheduler.affinity:host_label: newhost=newhost
